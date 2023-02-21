@@ -4,13 +4,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(countValidBrackets1("(()"));
-        System.out.println(countValidBrackets1(")()())"));
-        System.out.println(countValidBrackets1(")(()())"));
-        System.out.println(countValidBrackets1(")("));
+        System.out.println(countValidBrackets("(()"));
+        System.out.println(countValidBrackets(")()())"));
+        System.out.println(countValidBrackets(")(()())"));
+        System.out.println(countValidBrackets(")("));
     }
 
-    private static String countValidBrackets1(String s) {
+    private static String countValidBrackets(String s) {
         if (Objects.isNull(s)) {
             return "0";
         }
